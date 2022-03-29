@@ -21,7 +21,8 @@ export const FilterPanel = () => {
                         const className = filterName === name?
                         "filter-panel-btn btn-active" : "filter-panel-btn"
                         return (
-                            <button className={className}
+                            <button key={name}
+                                className={className}
                                 name={name}
                                 onClick={() => onChangeFilter(name)}>
                                 {label}
