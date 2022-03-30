@@ -6,6 +6,7 @@
     'Lucida Sans', Arial, sans-serif;
 }
 
+
 body {
     background: linear-gradient(
             90deg,
@@ -22,7 +23,7 @@ body {
     min-height: 400px;
     background: #161a2b;
     text-align: center;
-    margin: 70px auto;
+    margin: 40px auto;
     border-radius: 10px;
     padding-bottom: 32px;
 }
@@ -150,7 +151,15 @@ h1 {
 }
 
 .todo-row_text {
+    max-width: 80%;
+    word-break: break-all;
     cursor: pointer;
+    text-align: initial;
+}
+
+.todo-row_text p {
+    margin: 0;
+    padding: 0;
 }
 
 .filter-panel{
@@ -183,9 +192,12 @@ h1 {
 
 .todo-alert{
     max-width: 520px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0  auto;
+    margin-top: 5px;
     text-align: center;
-    transform: translateY(-100%);
+    transform: translateY(calc(-100% - 5px));
     transition: all linear 0.7s;
 }
 
@@ -208,6 +220,7 @@ h1 {
         padding: 10px;
     }
 
+
 }
 
 @media screen and (max-width: 430px){
@@ -226,20 +239,18 @@ h1 {
     .todo-app, .todo-alert{
         max-width: 320px;
     }
+
+    .todo-app{
+        margin: 20px auto;
+    }
 }
 
 @media screen and (max-width: 330px){
-    .todo-app{
-        margin: 70px 5px;
-    }
 
     .todo-alert{
         margin: 0 5px;
         padding-right: 0;
     }
-
-
-
 
 }
 

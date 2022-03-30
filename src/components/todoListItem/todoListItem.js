@@ -11,7 +11,7 @@ export const TodoListItem = ({todo, onCompleted, onRemove}) => {
     return (
         <div className={isCompleted ? 'todo-row complete' : 'todo-row'}>
             <div className = "todo-row_text" onClick={() => onCompleted(id)}>
-                {text}
+                <p>{text}</p>
             </div>
             <div className = "icons">
                 <RiCloseCircleLine

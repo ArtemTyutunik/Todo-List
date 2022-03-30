@@ -6,18 +6,17 @@ export const Alert = () => {
     const warning = useSelector(state => state.warning);
     const dispatch = useDispatch();
 
+    const classNames = warning? "alert alert-danger todo-alert alert-active":
+        "alert alert-danger todo-alert"
 
-    useEffect(() => {
-        setTimeout(() => dispatch(hideAlert()), 3000)
-        return () => {
-            clearTimeout();
-        }
-    })
     return (
-        <div className= { warning? "alert alert-danger todo-alert alert-active":
-            "alert alert-danger todo-alert"}
+        <div className= {classNames}
              role="alert">
-            Please enter something
+            <p>Please enter something</p>
+            <button type="button"
+                    className="btn-close"
+                    aria-label="Close"
+                    onClick={() => dispatch(hideAlert())}></button>
         </div>
     )
 
