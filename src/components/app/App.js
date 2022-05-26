@@ -8,7 +8,6 @@ import './app.css';
 import FilterPanel from "../filterPanel";
 
 const App = () => {
-    alert('hi');
     return (
         <React.Fragment>
             <Alert/>
