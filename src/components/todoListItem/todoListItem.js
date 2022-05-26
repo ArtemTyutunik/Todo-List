@@ -1,7 +1,5 @@
-import React, {useState} from "react";
+import React from "react";
 import { RiCloseCircleLine } from 'react-icons/ri';
-import { TiEdit } from 'react-icons/ti';
-import Form from "../form";
 
 
 
