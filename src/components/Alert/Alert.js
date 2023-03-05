@@ -6,8 +6,8 @@ export const Alert = () => {
     const warning = useSelector(state => state.warning);
     const dispatch = useDispatch();
 
-    const classNames = warning? "alert alert-danger todo-alert alert-active":
-        "alert alert-danger todo-alert"
+    const classNames = warning ? "alert alert-danger todo-alert alert-active"
+        : "alert alert-danger todo-alert"
 
     return (
         <div className= {classNames}

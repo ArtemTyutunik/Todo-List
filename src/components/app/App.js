@@ -3,9 +3,9 @@ import React from "react";
 import Form from "../form";
 import TodoList from "../todoList";
 import Alert from "../Alert";
+import FilterPanel from "../filterPanel";
 
 import './app.css';
-import FilterPanel from "../filterPanel";
 
 const App = () => {
     return (
